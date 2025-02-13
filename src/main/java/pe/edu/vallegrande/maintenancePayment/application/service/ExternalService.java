@@ -27,7 +27,7 @@ public class ExternalService {
     }
 
     public Mono<EnrollmentDto> getEnrollmentById(String enrollmentId) {
-        String url = "https://brilliant-quintana-ascencio-36ecbf2c.koyeb.app/management/api/v1/enrollment/" + enrollmentId;
+        String url = "https://helpless-cherri-ascencio-c0b03250.koyeb.app/management/api/v1/enrollment/" + enrollmentId;
         return webClientBuilder.build()
                 .get()
                 .uri(url)
