@@ -27,7 +27,7 @@ public class ExternalService {
     }
 
     public Mono<EnrollmentDto> getEnrollmentById(String enrollmentId) {
-        String url = "https://vg-ms-enrollment-production-4fb3.up.railway.app/management/api/v1/enrollment/" + enrollmentId;
+        String url = "https://brilliant-quintana-ascencio-36ecbf2c.koyeb.app/management/api/v1/enrollment/" + enrollmentId;
         return webClientBuilder.build()
                 .get()
                 .uri(url)
@@ -66,15 +66,15 @@ public class ExternalService {
     }
 
     public Mono<StudentDto> getStudentById(String studentId) {
-        return fetchData("https://ms-vg-student-production.up.railway.app/management/api/v1/student/list/", studentId, StudentDto.class);
+        return fetchData("https://vg-ms-student-production.up.railway.app/management/api/v1/student/list/", studentId, StudentDto.class);
     }
 
     public Mono<ProfileDto> getProfileById(String profileId) {
-        return fetchData("https://vg-ms-profile-production.up.railway.app/management/api/v1/profile/list/", profileId, ProfileDto.class);
+        return fetchData("https://real-drucill-shirleyas-ccbaedfa.koyeb.app/management/api/v1/profile/list/", profileId, ProfileDto.class);
     }
 
     public Mono<AcademicPeriodDto> getAcademicPeriodById(String academicPeriodId) {
-        return fetchData("https://academicperiod-production.up.railway.app/management/api/v1/academic_period/id/", academicPeriodId, AcademicPeriodDto.class);
+        return fetchData("https://detailed-rosalinda-brillith-c11c160b.koyeb.app/management/api/v1/academic_period/id/", academicPeriodId, AcademicPeriodDto.class);
     }
 
     private <T> Mono<T> fetchData(String baseUrl, String id, Class<T> responseType) {
