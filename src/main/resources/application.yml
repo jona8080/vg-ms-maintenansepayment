@@ -1,0 +1,25 @@
+server:
+  port: 8092
+spring:
+  application:
+    name: payments
+  data:
+    mongodb:
+      uri: mongodb+srv://gabrielgutierrezq:3mbmCx8Gx6hrRKHY@as221s5prs2.1e7z9.mongodb.net/AS221S5PRS2?retryWrites=true&w=majority&appName=AS221S5PRS2
+
+management:
+    endpoints:
+        web:
+            exposure:
+                include: prometheus,health,info
+
+# Swagger
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+  api-docs:
+    path: /api/payment
+
+# Empoit de actuator
+api:
+  version: api/v1
