@@ -74,7 +74,7 @@ public class ExternalService {
     }
 
     public Mono<AcademicPeriodDto> getAcademicPeriodById(String academicPeriodId) {
-        return fetchData("https://detailed-rosalinda-brillith-c11c160b.koyeb.app/management/api/v1/academic_period/id/", academicPeriodId, AcademicPeriodDto.class);
+        return fetchData("https://wealthy-shell-juliaquispe-3d838dea.koyeb.app/management/api/v1/academic_period/id/", academicPeriodId, AcademicPeriodDto.class);
     }
 
     private <T> Mono<T> fetchData(String baseUrl, String id, Class<T> responseType) {
